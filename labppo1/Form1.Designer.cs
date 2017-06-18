@@ -372,7 +372,7 @@
             this.ColorSet1.Name = "ColorSet1";
             this.ColorSet1.Size = new System.Drawing.Size(120, 39);
             this.ColorSet1.TabIndex = 33;
-            this.ColorSet1.Text = "ColorSet1";
+            this.ColorSet1.Text = "Editor";
             this.ColorSet1.UseVisualStyleBackColor = true;
             this.ColorSet1.Click += new System.EventHandler(this.ColorSet1_Click);
             // 
@@ -382,7 +382,7 @@
             this.ColorSet2.Name = "ColorSet2";
             this.ColorSet2.Size = new System.Drawing.Size(120, 39);
             this.ColorSet2.TabIndex = 34;
-            this.ColorSet2.Text = "ColorSet2";
+            this.ColorSet2.Text = "RegularUser";
             this.ColorSet2.UseVisualStyleBackColor = true;
             this.ColorSet2.Click += new System.EventHandler(this.ColorSet2_Click);
             // 

@@ -46,5 +46,17 @@ namespace labppo1.Properties {
                 this["color2"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Editor {
+            get {
+                return ((bool)(this["Editor"]));
+            }
+            set {
+                this["Editor"] = value;
+            }
+        }
     }
 }

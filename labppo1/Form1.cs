@@ -39,49 +39,60 @@ namespace labppo1
                 }
             };
 
-            gcms = new ContextMenuStrip();
-            scms = new ContextMenuStrip();
-            tcms = new ContextMenuStrip();
-            ToolStripMenuItem addStudent = new ToolStripMenuItem();
-            addStudent.Text = "Add Student";
-            addStudent.Click += addStudent_Click;
-            ToolStripMenuItem delGroup = new ToolStripMenuItem();
-            delGroup.Text = "Delete Group";
-            delGroup.Click += delGroup_Click;
-            ToolStripMenuItem renameGroup = new ToolStripMenuItem();
-            renameGroup.Text = "Rename Group";
-            renameGroup.Click += renameGroup_Click;
-            ToolStripMenuItem delStudent = new ToolStripMenuItem();
-            delStudent.Text = "Delete Student";
-            delStudent.Click += delStudent_Click;
-            ToolStripMenuItem addGroup = new ToolStripMenuItem();
-            addGroup.Text = "Add Group";
-            addGroup.Click += addGroup_Click;
-
-            
-            tcms.Items.Add(addGroup);
-            scms.Items.Add(delStudent);
-            gcms.Items.AddRange(new ToolStripMenuItem[]{addStudent, delGroup, renameGroup});
-
-            treeView1.ContextMenuStrip = tcms;
-
-            //this.Controls.Add(treeView1);
             plug = new PluginLoader();
-            initPlugins(plug.loadPlugins("Plugins"));
 
+            SetSettings();
+            //this.Controls.Add(treeView1);
+
+            initPlugins(plug.loadPlugins("Plugins"));
             this.treeView1.AfterSelect += (s, arg) => treeView1_AfterSelect();
 
-            Visuals();
         }
 
-        private void Visuals()
+        private void SetSettings()
         {
             treeView1.ForeColor = Properties.Settings.Default.color1;
             treeView1.BackColor = Properties.Settings.Default.color2;
+            if (Properties.Settings.Default.Editor)
+            {
+                gcms = new ContextMenuStrip();
+                scms = new ContextMenuStrip();
+                tcms = new ContextMenuStrip();
+                ToolStripMenuItem addStudent = new ToolStripMenuItem();
+                addStudent.Text = "Add Student";
+                addStudent.Click += addStudent_Click;
+                ToolStripMenuItem delGroup = new ToolStripMenuItem();
+                delGroup.Text = "Delete Group";
+                delGroup.Click += delGroup_Click;
+                ToolStripMenuItem renameGroup = new ToolStripMenuItem();
+                renameGroup.Text = "Rename Group";
+                renameGroup.Click += renameGroup_Click;
+                ToolStripMenuItem delStudent = new ToolStripMenuItem();
+                delStudent.Text = "Delete Student";
+                delStudent.Click += delStudent_Click;
+                ToolStripMenuItem addGroup = new ToolStripMenuItem();
+                addGroup.Text = "Add Group";
+                addGroup.Click += addGroup_Click;
+
+
+                tcms.Items.Add(addGroup);
+                scms.Items.Add(delStudent);
+                gcms.Items.AddRange(new ToolStripMenuItem[] { addStudent, delGroup, renameGroup });
+            }
+            else
+            {
+                gcms = new ContextMenuStrip();
+                scms = new ContextMenuStrip();
+                tcms = new ContextMenuStrip();
+            }
+            treeView1.ContextMenuStrip = tcms;
+            initPlugins(plug.loadPlugins("Plugins"));
+            UpdateTree();
         }
 
         private void initPlugins(List<IPlugin> plugins)
         {
+            listPlugins.Items.Clear();
             foreach(IPlugin pl in plugins)
             {
                 try
@@ -437,14 +448,16 @@ namespace labppo1
         {
             Properties.Settings.Default.color1 = System.Drawing.Color.Aqua;
             Properties.Settings.Default.color2 = System.Drawing.Color.BlanchedAlmond;
-            Visuals();
+            Properties.Settings.Default.Editor = true;
+            SetSettings();
         }
 
         private void ColorSet2_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.color1 = System.Drawing.Color.Black;
             Properties.Settings.Default.color2 = System.Drawing.Color.White;
-            Visuals();
+            Properties.Settings.Default.Editor = false;
+            SetSettings();
         }
 
         private void RedoButton_Click(object sender, EventArgs e)
