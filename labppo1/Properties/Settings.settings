@@ -11,5 +11,8 @@
     <Setting Name="Editor" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="Fontcolor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Silver</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

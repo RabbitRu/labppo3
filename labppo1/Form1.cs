@@ -53,6 +53,8 @@ namespace labppo1
         {
             treeView1.ForeColor = Properties.Settings.Default.color1;
             treeView1.BackColor = Properties.Settings.Default.color2;
+            ColorButton.BackColor = Properties.Settings.Default.Fontcolor;
+            
             if (Properties.Settings.Default.Editor)
             {
                 gcms = new ContextMenuStrip();
@@ -457,6 +459,15 @@ namespace labppo1
             Properties.Settings.Default.color1 = System.Drawing.Color.Black;
             Properties.Settings.Default.color2 = System.Drawing.Color.White;
             Properties.Settings.Default.Editor = false;
+            SetSettings();
+        }
+
+        private void ColorButton_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.Cancel)
+                return;
+
+            Properties.Settings.Default.Fontcolor = colorDialog1.Color;
             SetSettings();
         }
 

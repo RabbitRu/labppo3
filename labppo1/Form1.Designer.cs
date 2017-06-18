@@ -67,6 +67,8 @@
             this.listPlugins = new System.Windows.Forms.ListBox();
             this.ColorSet1 = new System.Windows.Forms.Button();
             this.ColorSet2 = new System.Windows.Forms.Button();
+            this.ColorButton = new System.Windows.Forms.Button();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -370,7 +372,7 @@
             // 
             this.ColorSet1.Location = new System.Drawing.Point(632, 12);
             this.ColorSet1.Name = "ColorSet1";
-            this.ColorSet1.Size = new System.Drawing.Size(120, 39);
+            this.ColorSet1.Size = new System.Drawing.Size(78, 39);
             this.ColorSet1.TabIndex = 33;
             this.ColorSet1.Text = "Editor";
             this.ColorSet1.UseVisualStyleBackColor = true;
@@ -380,17 +382,28 @@
             // 
             this.ColorSet2.Location = new System.Drawing.Point(632, 57);
             this.ColorSet2.Name = "ColorSet2";
-            this.ColorSet2.Size = new System.Drawing.Size(120, 39);
+            this.ColorSet2.Size = new System.Drawing.Size(78, 39);
             this.ColorSet2.TabIndex = 34;
             this.ColorSet2.Text = "RegularUser";
             this.ColorSet2.UseVisualStyleBackColor = true;
             this.ColorSet2.Click += new System.EventHandler(this.ColorSet2_Click);
+            // 
+            // ColorButton
+            // 
+            this.ColorButton.Location = new System.Drawing.Point(716, 12);
+            this.ColorButton.Name = "ColorButton";
+            this.ColorButton.Size = new System.Drawing.Size(36, 88);
+            this.ColorButton.TabIndex = 35;
+            this.ColorButton.Text = "Clr";
+            this.ColorButton.UseVisualStyleBackColor = true;
+            this.ColorButton.Click += new System.EventHandler(this.ColorButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(786, 547);
+            this.Controls.Add(this.ColorButton);
             this.Controls.Add(this.ColorSet2);
             this.Controls.Add(this.ColorSet1);
             this.Controls.Add(this.listPlugins);
@@ -474,6 +487,8 @@
         private System.Windows.Forms.ListBox listPlugins;
         private System.Windows.Forms.Button ColorSet1;
         private System.Windows.Forms.Button ColorSet2;
+        private System.Windows.Forms.Button ColorButton;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 

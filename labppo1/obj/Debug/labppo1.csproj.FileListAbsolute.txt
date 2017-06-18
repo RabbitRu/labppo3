@@ -15,3 +15,4 @@ C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\obj\Debug
 C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\obj\Debug\labppo1.csproj.GenerateResource.Cache
 C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\obj\Debug\labppo1.exe
 C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\obj\Debug\labppo1.pdb
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\obj\Debug\labppo1.csprojResolveAssemblyReference.cache

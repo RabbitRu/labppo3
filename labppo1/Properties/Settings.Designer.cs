@@ -58,5 +58,17 @@ namespace labppo1.Properties {
                 this["Editor"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Silver")]
+        public global::System.Drawing.Color Fontcolor {
+            get {
+                return ((global::System.Drawing.Color)(this["Fontcolor"]));
+            }
+            set {
+                this["Fontcolor"] = value;
+            }
+        }
     }
 }
