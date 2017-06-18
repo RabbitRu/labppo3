@@ -1,0 +1,17 @@
+c:\users\ultranb\documents\visual studio 2017\Projects\labppo1\labppo1\bin\Debug\labppo1.exe.config
+c:\users\ultranb\documents\visual studio 2017\Projects\labppo1\labppo1\bin\Debug\labppo1.exe
+c:\users\ultranb\documents\visual studio 2017\Projects\labppo1\labppo1\bin\Debug\labppo1.pdb
+c:\users\ultranb\documents\visual studio 2017\Projects\labppo1\labppo1\obj\Debug\labppo1.csprojResolveAssemblyReference.cache
+c:\users\ultranb\documents\visual studio 2017\Projects\labppo1\labppo1\obj\Debug\labppo1.Form1.resources
+c:\users\ultranb\documents\visual studio 2017\Projects\labppo1\labppo1\obj\Debug\labppo1.Properties.Resources.resources
+c:\users\ultranb\documents\visual studio 2017\Projects\labppo1\labppo1\obj\Debug\labppo1.csproj.GenerateResource.Cache
+c:\users\ultranb\documents\visual studio 2017\Projects\labppo1\labppo1\obj\Debug\labppo1.exe
+c:\users\ultranb\documents\visual studio 2017\Projects\labppo1\labppo1\obj\Debug\labppo1.pdb
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\bin\Debug\labppo1.exe.config
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\bin\Debug\labppo1.exe
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\bin\Debug\labppo1.pdb
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\obj\Debug\labppo1.Form1.resources
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\obj\Debug\labppo1.Properties.Resources.resources
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\obj\Debug\labppo1.csproj.GenerateResource.Cache
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\obj\Debug\labppo1.exe
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\obj\Debug\labppo1.pdb

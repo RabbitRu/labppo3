@@ -1,0 +1,10 @@
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\Plugin2\bin\Debug\Plugin2.dll
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\Plugin2\bin\Debug\Plugin2.pdb
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\Plugin2\obj\Debug\Plugin2.csprojResolveAssemblyReference.cache
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\Plugin2\obj\Debug\Plugin2.dll
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\Plugin2\obj\Debug\Plugin2.pdb
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\Plugin2\bin\Debug\labppo1.exe
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\Plugin2\bin\Debug\labppo1.pdb
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\Plugin2\bin\Debug\labppo1.exe.config
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\bin\Debug\Plugins\Plugin2.dll
+C:\Users\Ultranb\Documents\Visual Studio 2017\Projects\labppo3\labppo1\bin\Debug\Plugins\Plugin2.pdb
