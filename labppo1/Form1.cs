@@ -70,6 +70,14 @@ namespace labppo1
             initPlugins(plug.loadPlugins("Plugins"));
 
             this.treeView1.AfterSelect += (s, arg) => treeView1_AfterSelect();
+
+            Visuals();
+        }
+
+        private void Visuals()
+        {
+            treeView1.ForeColor = Properties.Settings.Default.color1;
+            treeView1.BackColor = Properties.Settings.Default.color2;
         }
 
         private void initPlugins(List<IPlugin> plugins)
@@ -100,7 +108,7 @@ namespace labppo1
                                 case "all":
                                     scms.Items.Add(item);
                                     ToolStripMenuItem item2 = new ToolStripMenuItem();
-                                    listPlugins.Items.Add(pl.Name);
+                                    //listPlugins.Items.Add(pl.Name);
                                     item2.Text = pl.Text;
                                     pl.Dt = treeView1;
                                     item2.Click += pl.action;
@@ -423,6 +431,20 @@ namespace labppo1
             string filename = openFileDialog1.FileName;
 
             initPlugins(plug.loadPlugin(filename));
+        }
+
+        private void ColorSet1_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.color1 = System.Drawing.Color.Aqua;
+            Properties.Settings.Default.color2 = System.Drawing.Color.BlanchedAlmond;
+            Visuals();
+        }
+
+        private void ColorSet2_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.color1 = System.Drawing.Color.Black;
+            Properties.Settings.Default.color2 = System.Drawing.Color.White;
+            Visuals();
         }
 
         private void RedoButton_Click(object sender, EventArgs e)

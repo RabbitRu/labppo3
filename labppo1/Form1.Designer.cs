@@ -65,6 +65,8 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.addPluginButton = new System.Windows.Forms.Button();
             this.listPlugins = new System.Windows.Forms.ListBox();
+            this.ColorSet1 = new System.Windows.Forms.Button();
+            this.ColorSet2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -364,11 +366,33 @@
             this.listPlugins.Size = new System.Drawing.Size(120, 95);
             this.listPlugins.TabIndex = 32;
             // 
+            // ColorSet1
+            // 
+            this.ColorSet1.Location = new System.Drawing.Point(632, 12);
+            this.ColorSet1.Name = "ColorSet1";
+            this.ColorSet1.Size = new System.Drawing.Size(120, 39);
+            this.ColorSet1.TabIndex = 33;
+            this.ColorSet1.Text = "ColorSet1";
+            this.ColorSet1.UseVisualStyleBackColor = true;
+            this.ColorSet1.Click += new System.EventHandler(this.ColorSet1_Click);
+            // 
+            // ColorSet2
+            // 
+            this.ColorSet2.Location = new System.Drawing.Point(632, 57);
+            this.ColorSet2.Name = "ColorSet2";
+            this.ColorSet2.Size = new System.Drawing.Size(120, 39);
+            this.ColorSet2.TabIndex = 34;
+            this.ColorSet2.Text = "ColorSet2";
+            this.ColorSet2.UseVisualStyleBackColor = true;
+            this.ColorSet2.Click += new System.EventHandler(this.ColorSet2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(786, 547);
+            this.Controls.Add(this.ColorSet2);
+            this.Controls.Add(this.ColorSet1);
             this.Controls.Add(this.listPlugins);
             this.Controls.Add(this.addPluginButton);
             this.Controls.Add(this.UndoButton);
@@ -448,6 +472,8 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button addPluginButton;
         private System.Windows.Forms.ListBox listPlugins;
+        private System.Windows.Forms.Button ColorSet1;
+        private System.Windows.Forms.Button ColorSet2;
     }
 }
 
